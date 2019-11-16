@@ -3,8 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <title>Paperman-tom</title>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style1.css">
+    <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css">
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 </head>
 <body>
-    hello world
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-4">Hello world</h1>
+        <p class="lead">This is a paperman-tom's github pages</p>
+    </div>
+</div>
+<div class="container">
+    <div class="card" style="width: 18rem;">
+        <img src="img/chess_board.jpg" class="card-img-top" alt="..." width="200">
+        <div class="card-body">
+            <h5 class="card-title">五子棋 AI</h5>
+            <p class="card-text">一个简单的五子棋AI（施工中）</p>
+            <a href="#" class="btn btn-primary">Go chess with AI</a>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <img src="img/love.jpg" class="card-img-top" alt="..." width="200">
+        <div class="card-body">
+            <h5 class="card-title">my love</h5>
+            <p class="card-text">log our love</p>
+            <!--<button  class="btn btn-primary" id="lovebtn">only for 10</button>-->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" id="lovebtn">only for 10</button>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">身份验证</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="birthday" class="col-form-label">你的生日是</label>
+                                    <input type="text" class="form-control" id="birthday">
+                                </div>
+                                </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" id="check">Confirm</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 </body>
+<script type="text/javascript" src="main.js"></script>
+<script type="text/javascript" src="jquery-2.2.3.js"></script>
 </html>
