@@ -11,4 +11,7 @@ $(function() {
             return false;
         }
     });
+    $('#chess').click(function () {
+        window.location.href="https://paperman-tom.github.io/five/";
+    })
 });
